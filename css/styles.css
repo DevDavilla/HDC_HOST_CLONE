@@ -305,3 +305,75 @@ footer {
     font-weight: bold;
     margin: 50px 0 100px;
 }
+
+/* reponsividade */
+
+/* small laptops a partir de 1100px */
+@media (max-width: 1100px) {
+    .plans-container {
+        width: 95%
+    }
+
+    .plan {
+        margin: 0 5px;
+    }
+}
+
+/* tablet 900px */
+@media (max-width: 900px) {
+    .main-banner p {
+        padding: 0 6rem;
+    }
+
+    .searchdomain-container {
+        padding: 2rem, 4rem
+    }
+}
+
+/* celular 576px*/
+@media (max-width: 576px) {
+    html, body {
+        overflow-x: hidden;
+    }
+
+    .navbar-items li {
+        font-size: 12px;
+        margin-left: 10px;
+    }
+
+    .main-banner p {
+        padding: 0 2rem;
+    }
+    
+    .service-container ul {
+        flex-direction: column;
+    }
+
+
+    .plans-container {
+        flex-direction: column;
+        width: 100%;
+        padding: 0 2rem;
+    }
+
+    .plan {
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .searchdomain-container {
+        font-size: 28px;
+    }
+
+    .searchdomain-container input[type="text"] {
+        width: 100%;
+    }
+
+    .contact-container input,
+    .contact-container textarea {
+        width: 100%;
+        margin: 10px 0;
+        padding: 3rem 2rem;
+    }
+}
